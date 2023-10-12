@@ -63,10 +63,10 @@ jobs:
 
         - name: Push to DockerHub
           uses: docker/build-push-action@v4
-            with:
-              context: ./backend/
-              push: true
-              tags: michaelburka/taski_backend:latest
+          with:
+            context: ./backend/
+            push: true
+            tags: michaelburka/taski_backend:latest
 
     frontend_tests:
       runs-on: ubuntu-latest
